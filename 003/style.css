@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: aquamarine; */
+
+  /* background-image: url("./image.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: red; */
+
+  background: aqua no-repeat top left;
+  background-size: contain;
+}
+
+button {
+  /* margin-top: 100px;
+  margin-left: 20px; */
+
+  margin: 50px 0 0 10px;
+  padding: 10px 30px;
+
+  background: transparent;
+
+  /* 
+  border-style: solid;
+  border-width: 2px;
+  border-color: white; 
+  */
+
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.background-red {
+  margin: 10px 10px;
+  background: red;
+  width: 20%;
+  height: 50px;
+}
+
+#no-outline {
+  border: none;
+  margin: 10px;
+
+  /* outline: none; */
+  /* outline-width: 200px;
+  outline-color: red;
+   */
+  outline: 2px solid red;
+}
+
+#p1 {
+  /* background-color: red; */
+  margin: 10px;
+
+  color: green;
+  text-align: justify;
+  /* text-align-last: left; */
+  /* direction: ltr; */
+
+  /* text-decoration-line: overline underline line-through;
+  text-decoration-color: red;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 5px; */
+  text-decoration: underline red solid 2px;
+
+  text-transform: capitalize;
+
+  text-indent: 40px;
+
+  letter-spacing: 2px;
+  line-height: 30px;
+  word-spacing: 30px;
+  white-space: normal;
+
+  text-shadow: 3px 3px 5px black;
+}
