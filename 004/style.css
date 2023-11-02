@@ -1,0 +1,83 @@
+* {
+  font: italic 10px Lalezar;
+}
+
+#text1 {
+  font-style: italic;
+  font-weight: bold;
+  font-variant: small-caps;
+
+  font-size: 20px;
+}
+
+#text2 {
+  /* font-family: Handjet, Lalezar; */
+}
+
+#text3 {
+  /* font-family: Lalezar; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  border: 1px solid;
+  padding: 1px;
+  margin-bottom: 100px;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  border-color: violet;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+li {
+  list-style-type: square;
+  /* list-style-image: url("./icon.png"); */
+  /* list-style-position: inside; */
+  /* list-style: square inside url("./icon.png"); */
+}
+
+table,
+td,
+th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  height: 40px;
+  background-color: black;
+  color: white;
+}
+
+td {
+  text-align: center;
+  height: 20px;
+  vertical-align: middle;
+}
+
+tr:nth-child(even) {
+  background-color: gray;
+}
+tr:nth-child(odd) {
+  background-color: orange;
+}
+
+tr:hover {
+  background-color: black;
+  color: white;
+}
