@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-size: 30px;
+}
+
+#unit {
+  background-color: red;
+  height: 30px;
+  font-size: 30px;
+
+  /* width: 10cm; */
+  /* width: 10mm; */
+  /* width: 10in; */
+  /* width: 10pt; */
+  /* width: 10pc; */
+  /* width: 100px; */
+
+  /* width: 1em; */
+  /* width: 1ex; */
+  /* width: 1ch; */
+  /* width: 1rem; */
+  /* width: 50vw; */
+  /* height: 50vh; */
+  /* width: 50vmax; */
+  /* width: 50vmin; */
+  width: 60%;
+
+  margin-bottom: 10px;
+}
+
+#inner-unit {
+  height: 30px;
+  background-color: blue;
+  width: 50%;
+}
+
+#math {
+  /* width: calc(100% - 100px); */
+  /* width: max(50vh, 200px); */
+  width: min(100px, 300px, 50vw);
+  background-color: green;
+  height: 30px;
+
+  /* border-radius shorthand form */
+  border-radius: 50px 15px 50px 15px;
+}
+
+#border-image {
+  margin-top: 10px;
+
+  width: 200px;
+  height: 30px;
+
+  /* background-image: linear-gradient(to right, orange, white); */
+  /* background-image: linear-gradient(to right bottom, orange, gray); */
+  /* background-image: linear-gradient(45deg, orange, gray); */
+  /* background-image: linear-gradient(45deg, blue, green, red, orange, black); */
+  /* background-image: linear-gradient(red, transparent); */
+  /* background-image: linear-gradient(rgba(255, 0, 0, 1), rgba(255, 0, 0, 0)); */
+  /* background-image: repeating-linear-gradient(red, yellow 10%, black 20%); */
+  background-image: repeating-linear-gradient(red, yellow 10%, black 20%);
+
+  /* border-image: url(./image.jpg) 30px stretch; */
+}
+
+#radial {
+  margin-top: 10px;
+  width: 200px;
+  height: 30px;
+  /* background-image: radial-gradient(red, yellow, green); */
+  /* background-image: radial-gradient(red 5%, yellow 15%, green 80%); */
+  /* background-image: radial-gradient(blue, red, green, yellow); */
+  /* background-image: radial-gradient(circle, blue, red, black); */
+  background-image: repeating-radial-gradient(blue, red 5%, black 15%);
+}
+
+#conic {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  /* background-image: conic-gradient(red, blue); */
+  /* background-image: conic-gradient(red, blue, green, yellow); */
+  /* background-image: conic-gradient(red 20deg, blue 180deg, green 270deg); */
+  /* background-image: conic-gradient(
+    red 0deg 90deg,
+    green 90deg 180deg,
+    blue 180deg 270deg,
+    yellow 270deg 360deg
+  ); */
+  /* background-image: conic-gradient(from 90deg, red, green); */
+  /* background-image: conic-gradient(at 60% 70%, red, green); */
+  background-image: repeating-conic-gradient(red 10%, green 20%);
+}
+
+#shadow {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100px;
+  height: 30px;
+  background-color: blueviolet;
+
+  /* box-shadow: 0px 3px 5px 0.1px pink; */
+  box-shadow: 0px 0px 5px 0.1px pink inset;
+}
+
+p {
+  margin-top: 10px;
+  font-family: "iran-sans";
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: "iran-sans";
+  src: url("./iran-sans.ttf") format("ttf"),
+    url("./iran-sans.woff") format("woff"),
+    url("./iran-sans.woff2") format("woff2");
+}
