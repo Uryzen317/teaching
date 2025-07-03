@@ -1,0 +1,22 @@
+input,
+button {
+  outline: none;
+  padding: 8px 16px;
+  font-size: 18px;
+}
+
+.task-box {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin: 8px 0;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-completed {
+  background-color: teal;
+  color: white;
+}
