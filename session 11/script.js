@@ -21,9 +21,6 @@ createBtn.addEventListener("click", () => {
     newTitle.innerText = task;
     newTask.appendChild(newTitle);
 
-    // images container
-    const newImagesContainer = document.createElement("div");
-
     // done image
     const doneImage = document.createElement("img");
     doneImage.src = "./assets/done.png";

@@ -1,0 +1,30 @@
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid black;
+  padding: 4px;
+
+  margin: 4px 0;
+}
+
+.task-completed {
+  background-color: lime;
+}
+
+img {
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+img[src="./assets/delete.png"]:hover {
+  background-color: cyan;
+  filter: invert(1);
+}
+
+img[src="./assets/done.png"]:hover {
+  background-color: violet;
+  filter: invert(1);
+}
