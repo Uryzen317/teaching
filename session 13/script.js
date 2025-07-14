@@ -1,28 +1,15 @@
+// [Mehran]
+// redesign [easy]
+// refactor into singuar functions [hard]
+
+// [Javad]
+// img > svg [increase qualiy]
+// prevent empty list creation
+
 const inputTitle = document.querySelector("#input-title");
 const createBtn = document.querySelector("#create-btn");
 const tasksContainer = document.querySelector("#tasks-container");
-let tasks = [
-  // {
-  //   title: "test",
-  //   isSpecial: false,
-  //   date: new Date(),
-  //   list: [
-  //     {
-  //       title: "test",
-  //       isDone: false,
-  //     },
-  //     {
-  //       title: "test",
-  //       isDone: false,
-  //     },
-  //     {
-  //       title: "test",
-  //       isDone: true,
-  //     },
-  //   ],
-  // },
-];
-// renderTasks();
+let tasks = [];
 
 createBtn.addEventListener("click", () => {
   if (!inputTitle.value) return;
@@ -106,6 +93,7 @@ function renderTasks() {
     const newListBtn = document.createElement("button");
     newListBtn.innerText = "Create";
     newListBtn.addEventListener("click", () => {
+      // TO DO : REFACTOR
       const inputTarget = document.getElementById(
         `list-title-input-${counter}`
       );
@@ -135,6 +123,7 @@ function renderTasks() {
       }
 
       newListCheckbox.addEventListener("click", () => {
+        // TO DO : REFACTOR
         tasks[counter].list[LICounter].isDone =
           !tasks[counter].list[LICounter].isDone;
 
