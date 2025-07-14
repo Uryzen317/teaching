@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+
+  <body>
+    <!-- create new task -->
+    <div>
+      <input id="input-title" placeholder="task title" />
+      <button id="create-btn">Create</button>
+    </div>
+    <hr />
+
+    <!-- list of tasks -->
+    <div id="tasks-container">
+      <div style="display: none" class="task">
+        <!-- header -->
+        <div class="task-header">
+          <p>test<span>2025/7/14</span></p>
+          <div>
+            <img src="./assets/done.png" /><img src="./assets/delete.png" />
+          </div>
+        </div>
+
+        <!-- list -->
+        <div class="task-list">
+          <input placeholder="list title" />
+          <button>create</button>
+
+          <ul>
+            <li>
+              <input type="checkbox" />
+              <spna>list 1</spna>
+            </li>
+            <li>
+              <input type="checkbox" />
+              <spna>list 1</spna>
+            </li>
+            <li>
+              <input type="checkbox" />
+              <spna>list 1</spna>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
