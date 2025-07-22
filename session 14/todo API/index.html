@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   setter();
+      //   getter();
+
+      // setter
+      function setter() {
+        const ajax = new XMLHttpRequest();
+        ajax.open("POST", "http://195.177.255.229:3009/set");
+        ajax.setRequestHeader("Content-Type", "application/json");
+
+        ajax.send(
+          JSON.stringify({
+            test: "test",
+          })
+        );
+
+        ajax.onload = () => {
+          console.log("done");
+        };
+      }
+
+      // getter
+      function getter() {
+        const ajax = new XMLHttpRequest();
+        ajax.open("GET", "http://195.177.255.229:3009/get");
+
+        ajax.send();
+        ajax.onload = (event) => {
+          console.log("done");
+          console.log(JSON.parse(event.target.response));
+        };
+      }
+    </script>
+  </body>
+</html>
