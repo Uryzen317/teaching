@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 4px;
+}
+
+#main-container {
+  display: flex;
+  gap: 2px;
+}
+
+.counter-container {
+  position: relative;
+
+  border: 0.5px grey solid;
+  height: 20px;
+  width: 12px;
+
+  overflow: hidden;
+}
+
+.counter-container > ul {
+  list-style: none;
+  position: absolute;
+  left: 1.5px;
+
+  transition: all 0.1s ease-out;
+}
+
+.state-0 > ul {
+  top: -0;
+}
+
+.state-1 > ul {
+  top: -18px;
+}
+
+.state-2 > ul {
+  top: -37px;
+}
+
+.state-3 > ul {
+  top: -55px;
+}
+
+.state-4 > ul {
+  top: -74px;
+}
+
+.state-5 > ul {
+  top: -92px;
+}
+
+.state-6 > ul {
+  top: -111px;
+}
+
+.state-7 > ul {
+  top: -129px;
+}
+
+.state-8 > ul {
+  top: -148px;
+}
+
+.state-9 > ul {
+  top: -166px;
+}
