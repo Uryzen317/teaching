@@ -1,12 +1,11 @@
-const hourElem1 = document.querySelector("#hour-1");
-const hourElem2 = document.querySelector("#hour-2");
-const minuteElem1 = document.querySelector("#minute-1");
-const minuteElem2 = document.querySelector("#minute-2");
-const secondElem1 = document.querySelector("#second-1");
-const secondElem2 = document.querySelector("#second-2");
-const msElem1 = document.querySelector("#ms-1");
-const msElem2 = document.querySelector("#ms-2");
-
+const timeElems = [
+  document.querySelector("#minute-2"),
+  document.querySelector("#minute-1"),
+  document.querySelector("#second-2"),
+  document.querySelector("#second-1"),
+  document.querySelector("#ms-1"),
+  document.querySelector("#ms-2"),
+];
 const time = [0, 0, 0, 0, 0, 0]; // 0-9 -> hour, minute, second
 const times = {
   minute2: 0,
@@ -39,37 +38,14 @@ function start() {
       }
     }
 
-    // secondElem2.textContent = time[times.second2];
-    secondElem2.classList.forEach((className) => {
-      if (className !== "counter-container") {
-        secondElem2.classList.remove(className);
-      }
-    });
-    secondElem2.classList.add(`state-${time[times.second2]}`);
-
-    // secondElem1.textContent = time[times.second1];
-    secondElem1.classList.forEach((className) => {
-      if (className !== "counter-container") {
-        secondElem1.classList.remove(className);
-      }
-    });
-    secondElem1.classList.add(`state-${time[times.second1]}`);
-
-    // minuteElem2.textContent = time[times.minute2];
-    minuteElem2.classList.forEach((className) => {
-      if (className !== "counter-container") {
-        minuteElem2.classList.remove(className);
-      }
-    });
-    minuteElem2.classList.add(`state-${time[times.minute2]}`);
-
-    // minuteElem1.textContent = time[times.minute1];
-    minuteElem1.classList.forEach((className) => {
-      if (className !== "counter-container") {
-        minuteElem1.classList.remove(className);
-      }
-    });
-    minuteElem1.classList.add(`state-${time[times.minute1]}`);
+    for (let counter = 0; counter <= 3; counter++) {
+      timeElems[counter].classList.forEach((className) => {
+        if (className !== "counter-container") {
+          timeElems[counter].classList.remove(className);
+        }
+      });
+      timeElems[counter].classList.add(`state-${time[counter]}`);
+    }
   }, 1000);
 
   // MS handler
@@ -85,20 +61,13 @@ function start() {
       }
     }
 
-    // msElem1.textContent = time[times.ms1];
-    msElem1.classList.forEach((className) => {
-      if (className !== "counter-container") {
-        msElem1.classList.remove(className);
-      }
-    });
-    msElem1.classList.add(`state-${time[times.ms1]}`);
-
-    // msElem2.textContent = time[times.ms2];
-    msElem2.classList.forEach((className) => {
-      if (className !== "counter-container") {
-        msElem2.classList.remove(className);
-      }
-    });
-    msElem2.classList.add(`state-${time[times.ms2]}`);
+    for (let counter = 4; counter <= 5; counter++) {
+      timeElems[counter].classList.forEach((className) => {
+        if (className !== "counter-container") {
+          timeElems[counter].classList.remove(className);
+        }
+      });
+      timeElems[counter].classList.add(`state-${time[counter]}`);
+    }
   }, 10);
 }
