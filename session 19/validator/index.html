@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="main-container">
+      <p id="title">ثبت نام</p>
+
+      <form>
+        <input name="username" placeholder="نام کاربری" />
+        <input name="email" placeholder="ایمیل" />
+        <input
+          type="number"
+          min="18"
+          max="20"
+          required
+          name="age"
+          placeholder="سن"
+        />
+        <input type="password" name="password" placeholder="رمز عبور" />
+        <span onclick="showPassword()">نمایش</span>
+
+        <input
+          type="password"
+          name="repeat-password"
+          placeholder="تکرار رمز عبور"
+        />
+
+        <button type="button" onclick="signup(event)">ثبت نام</button>
+      </form>
+    </div>
+  </body>
+</html>
