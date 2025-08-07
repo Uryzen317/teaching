@@ -1,0 +1,59 @@
+:root {
+  --secondary: rgb(77, 77, 77);
+  --primary: beige;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  transition: all 0.3s ease-out;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+body > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-weight: bold;
+  font-size: 48px;
+  color: var(--secondary);
+}
+
+button {
+  padding: 8px 16px;
+  outline: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --secondary: rgb(77, 77, 77);
+    --primary: beige;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+}
+
+@media (prefers-reduced-motion: reduce) {
+}
+
+@media (prefers-contrast: more) {
+} */
